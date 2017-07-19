@@ -160,11 +160,18 @@ int main()
         CYASSERT(0);
     }
 
+    UART_1_Start();
+
     for(;;)
     {
         /* Single API call to service all the BLE stack events. Must be
          * called at least once in a BLE connection interval */
         CyBle_ProcessEvents();
+    UART_1_UartPutChar('A');
+    UART_1_UartPutChar('B');
+    UART_1_UartPutChar('C');
+    UART_1_UartPutChar('D');
+    UART_1_UartPutChar('E');
         
     }
 }
