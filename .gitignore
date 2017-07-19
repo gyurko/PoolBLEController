@@ -1,0 +1,10 @@
+codegentemp
+CortexM0
+Export
+Generated_Source
+*.gyurk
+*.cycdx
+*.cyfit
+*.html
+*.rpt
+cyapicallbacks.h
