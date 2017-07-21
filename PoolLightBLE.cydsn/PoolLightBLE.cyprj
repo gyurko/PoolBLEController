@@ -1106,7 +1106,7 @@
 <WriteAppVersionLastSavedWith v="4.0.0.432" />
 <WriteAppMarketingVersionLastSavedWith v=" 4.0 Update 1" />
 <project_id v="b4372fe4-deb7-414b-8560-87f43078974b" />
-<GenerateDescriptionFiles v="False" />
+<GenerateDescriptionFiles v="True" />
 </CyGuid_49cfd574-032a-4a64-b7be-d4eeeaf25e43>
 </CyGuid_60697ce6-dce2-4816-8680-4de0635742eb>
 <top_block v="TopDesign" />
