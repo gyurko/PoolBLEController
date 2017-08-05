@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" release="PSoC Creator  4.0 Update 1" template="Empty (11&quot; x 8.5&quot;)" xmlns="http://cypress.com/xsd/cyvis">
+  <Page index="0" name="Page 1" enabled="true" shapeCount="6">
+    <Instance shapeName="Shape_2" zorder="0" guid="17773bd1-6902-4366-a62d-819ebc1c2795" name="BLE" component="BLE_v3_30">
+      <Location x="234" y="307.4922" />
+      <Size width="72" height="58.50781" />
+      <SubShapes>
+        <Rectangle>
+          <Location x="234" y="318" />
+          <Size width="72" height="12" />
+          <Outline dashStyle="Solid" startCap="Flat" endCap="Flat" lineJoin="Miter" weight="1">
+            <SolidBrush color="0, 0, 0" />
+          </Outline>
+          <Fill>
+            <SolidBrush color="135, 206, 235" />
+          </Fill>
+        </Rectangle>
+        <Rectangle>
+          <Location x="234" y="330" />
+          <Size width="72" height="36" />
+          <Outline dashStyle="Solid" startCap="Flat" endCap="Flat" lineJoin="Miter" weight="1">
+            <SolidBrush color="0, 0, 0" />
+          </Outline>
+          <Fill>
+            <SolidBrush color="220, 220, 220" />
+          </Fill>
+        </Rectangle>
+        <Annotation>
+          <Location x="234" y="318" />
+          <Size width="72" height="12" />
+          <Text>BLE</Text>
+          <Fill>
+            <SolidBrush color="0, 0, 0" />
+          </Fill>
+          <Font value="Microsoft Sans Serif, 10pt" />
+          <TextAlignment value="MiddleCenter" />
+        </Annotation>
+        <Annotation>
+          <Location x="285.668" y="307.4922" />
+          <Text>BLE</Text>
+          <Expression>`=$INSTANCE_NAME`</Expression>
+          <Fill>
+            <SolidBrush color="0, 0, 0" />
+          </Fill>
+          <Font value="Microsoft Sans Serif, 10pt" />
+          <TextAlignment value="BottomRight" />
+        </Annotation>
+        <Image>
+          <Location x="237" y="335.6" />
+          <Size width="66.64735" height="21.19522" />
+          <ImageChecksum value="c94dace8c3fbc4de86fe4680edc735e2" />
+        </Image>
+        <Annotation>
+          <Location x="236.1995" y="356.09" />
+          <Text> 4.2</Text>
+          <Fill>
+            <SolidBrush color="0, 87, 240" />
+          </Fill>
+          <Font value="Arial Narrow, 9.75pt, style=Bold" />
+          <TextAlignment value="TopLeft" />
+        </Annotation>
+      </SubShapes>
+    </Instance>
+    <Instance shapeName="Shape_15" zorder="3" guid="35c87239-3fcc-4616-a568-92ea77ba21ec" name="PeriodicTimer" component="TCPWM_P4_v2_10">
+      <Location x="303" y="116.1864" />
+      <Size width="90" height="129.8136" />
+      <SubShapes>
+        <Rectangle>
+          <Location x="312" y="138" />
+          <Size width="72" height="108" />
+          <Outline dashStyle="Solid" startCap="Flat" endCap="Flat" lineJoin="Miter" weight="1">
+            <SolidBrush color="0, 0, 0" />
+          </Outline>
+          <Fill>
+            <SolidBrush color="220, 220, 220" />
+          </Fill>
+        </Rectangle>
+        <Rectangle>
+          <Location x="312" y="126" />
+          <Size width="72" height="12" />
+          <Outline dashStyle="Solid" startCap="Round" endCap="Round" lineJoin="Round" weight="1">
+            <SolidBrush color="0, 0, 0" />
+          </Outline>
+          <Fill>
+            <SolidBrush color="144, 238, 144" />
+          </Fill>
+        </Rectangle>
+        <Annotation>
+          <Location x="321.0464" y="116.1864" />
+          <Text>PeriodicTimer</Text>
+          <Expression>`=$INSTANCE_NAME`</Expression>
+          <Fill>
+            <SolidBrush color="0, 0, 0" />
+          </Fill>
+          <Font value="Microsoft Sans Serif, 10pt" />
+          <TextAlignment value="TopRight" />
+        </Annotation>
+        <Terminal name="PeriodicTimer.interrupt" type="Instance Digital Output">
+          <Location x="390" y="234" />
+          <ShowWireGuide value="true" />
+        </Terminal>
+        <Annotation>
+          <Location x="344.3132" y="229.1648" />
+          <Text>interrupt</Text>
+          <TextAlignment value="MiddleRight" />
+        </Annotation>
+        <Terminal name="PeriodicTimer.ov" type="Instance Digital Output">
+          <Location x="390" y="150" />
+          <ShowWireGuide value="true" />
+        </Terminal>
+        <Annotation>
+          <Location x="370.9441" y="147.179" />
+          <Text>ov</Text>
+          <TextAlignment value="MiddleRight" />
+        </Annotation>
+        <Terminal name="PeriodicTimer.un" type="Instance Digital Output">
+          <Location x="390" y="162" />
+          <ShowWireGuide value="true" />
+        </Terminal>
+        <Annotation>
+          <Location x="370.6755" y="158.2098" />
+          <Text>un</Text>
+          <TextAlignment value="MiddleRight" />
+        </Annotation>
+        <Terminal name="PeriodicTimer.cc" type="Instance Digital Output">
+          <Location x="390" y="174" />
+          <ShowWireGuide value="true" />
+        </Terminal>
+        <Annotation>
+          <Location x="371.5203" y="170.4482" />
+          <Text>cc</Text>
+          <TextAlignment value="MiddleRight" />
+        </Annotation>
+        <Annotation>
+          <Location x="315.3751" y="127.8423" />
+          <Text>Timer Counter</Text>
+          <Fill>
+            <SolidBrush color="0, 0, 0" />
+          </Fill>
+          <Font value="Microsoft Sans Serif, 10pt" />
+          <TextAlignment value="TopLeft" />
+        </Annotation>
+        <Terminal name="PeriodicTimer.clock" type="Instance Digital Input">
+          <Location x="306" y="222" />
+          <ShowWireGuide value="true" />
+        </Terminal>
+        <Annotation>
+          <Location x="320.0166" y="217.7764" />
+          <Text>clock</Text>
+          <TextAlignment value="MiddleLeft" />
+        </Annotation>
+        <Line>
+          <Point x="312" y="216" />
+          <Point x="318" y="222" />
+          <Outline dashStyle="Solid" startCap="Round" endCap="Round" lineJoin="Round" weight="1">
+            <SolidBrush color="0, 0, 0" />
+          </Outline>
+        </Line>
+        <Line>
+          <Point x="318" y="222" />
+          <Point x="312" y="228" />
+          <Outline dashStyle="Solid" startCap="Flat" endCap="Round" lineJoin="Round" weight="1">
+            <SolidBrush color="0, 0, 0" />
+          </Outline>
+        </Line>
+      </SubShapes>
+    </Instance>
+    <Instance shapeName="Shape_49" zorder="4" guid="3b9b0691-3891-409d-97ac-767f6e401535" name="Clock_1" component="cy_clock_v2_20">
+      <Location x="243.5771" y="217" />
+      <Size width="65.42285" height="16.53125" />
+      <SubShapes>
+        <Rectangle>
+          <Location x="282" y="217" />
+          <Size width="18" height="10" />
+          <Outline dashStyle="Solid" startCap="Flat" endCap="Flat" lineJoin="Miter" weight="0">
+            <SolidBrush color="0, 0, 0" />
+          </Outline>
+          <Fill>
+            <SolidBrush color="220, 220, 220" />
+          </Fill>
+        </Rectangle>
+        <Terminal name="Clock_1.clock_out" type="Instance Digital Output">
+          <Location x="306" y="222" />
+          <ShowWireGuide value="true" />
+        </Terminal>
+        <ClosedShape>
+          <Point x="285.7652" y="223.9238" />
+          <Point x="285.7652" y="218.6333" />
+          <Point x="290.0251" y="218.6333" />
+          <Point x="290.0251" y="223.9238" />
+          <Point x="292.1551" y="223.9238" />
+          <Point x="292.1551" y="218.6333" />
+          <Point x="296.4151" y="218.6333" />
+          <Point x="296.4151" y="223.9238" />
+          <Point x="298.545" y="223.9238" />
+          <Point x="298.545" y="225.3667" />
+          <Point x="295.3501" y="225.3667" />
+          <Point x="295.3501" y="220.0761" />
+          <Point x="293.2201" y="220.0761" />
+          <Point x="293.2201" y="225.3667" />
+          <Point x="288.9602" y="225.3667" />
+          <Point x="288.9602" y="220.0761" />
+          <Point x="286.8302" y="220.0761" />
+          <Point x="286.8302" y="225.3667" />
+          <Point x="283.6352" y="225.3667" />
+          <Point x="283.6352" y="223.9238" />
+          <Point x="285.7652" y="223.9238" />
+          <Outline dashStyle="Solid" startCap="Flat" endCap="Flat" lineJoin="Miter" weight="0">
+            <SolidBrush color="255, 255, 255" />
+          </Outline>
+          <Fill>
+            <SolidBrush color="255, 255, 255" />
+          </Fill>
+        </ClosedShape>
+        <Annotation>
+          <Location x="243.5771" y="217.6543" />
+          <Text>Clock_1</Text>
+          <Expression><![CDATA[`=($is_direct) ? "Unknown Source Clock" : $INSTANCE_NAME`]]></Expression>
+          <Fill>
+            <SolidBrush color="0, 0, 0" />
+          </Fill>
+          <Font value="Microsoft Sans Serif, 10pt" />
+          <TextAlignment value="MiddleRight" />
+        </Annotation>
+        <Annotation>
+          <Location x="281.8125" y="229.1631" />
+          <Text>1 MHz</Text>
+          <Expression><![CDATA[`=($is_divider) ? $source_clock_name  . " / " . $pretty_divisor : ($is_direct) ? "" : $pretty_desired_freq`]]></Expression>
+          <Fill>
+            <SolidBrush color="0, 0, 0" />
+          </Fill>
+          <Font value="Microsoft Sans Serif, 6pt" />
+          <TextAlignment value="TopRight" />
+        </Annotation>
+      </SubShapes>
+    </Instance>
+    <Instance shapeName="Shape_50" zorder="5" guid="966838ff-a115-4a24-a465-e3b693d146c1" name="isr_1" component="cy_isr_v1_70">
+      <Location x="387" y="229" />
+      <Size width="49.02634" height="10" />
+      <SubShapes>
+        <Rectangle>
+          <Location x="396" y="229" />
+          <Size width="18" height="10" />
+          <Outline dashStyle="Solid" startCap="Flat" endCap="Flat" lineJoin="Miter" weight="0">
+            <SolidBrush color="0, 0, 0" />
+          </Outline>
+          <Fill>
+            <SolidBrush color="220, 220, 220" />
+          </Fill>
+        </Rectangle>
+        <Terminal name="isr_1.int_signal" type="Instance Digital Input">
+          <Location x="390" y="234" />
+          <ShowWireGuide value="true" />
+        </Terminal>
+        <Annotation>
+          <Location x="416.3437" y="229.9385" />
+          <Text>isr_1</Text>
+          <Expression>`=$INSTANCE_NAME`</Expression>
+          <Fill>
+            <SolidBrush color="0, 0, 0" />
+          </Fill>
+          <Font value="Microsoft Sans Serif, 10pt" />
+          <TextAlignment value="TopLeft" />
+        </Annotation>
+        <ClosedShape>
+          <Point x="399.0062" y="237.0002" />
+          <Point x="402.9658" y="234.7693" />
+          <Point x="402.9658" y="236.0242" />
+          <Point x="406.3255" y="233.7934" />
+          <Point x="406.3255" y="235.0482" />
+          <Point x="411.005" y="231.0049" />
+          <Point x="410.985" y="231.0049" />
+          <Point x="406.9054" y="233.2357" />
+          <Point x="406.9254" y="233.2357" />
+          <Point x="406.9254" y="231.9808" />
+          <Point x="403.5657" y="234.2117" />
+          <Point x="403.5657" y="232.9568" />
+          <Point x="399.0062" y="237.0002" />
+          <Outline dashStyle="Solid" startCap="Flat" endCap="Flat" lineJoin="Miter" weight="0">
+            <SolidBrush color="0, 0, 0" />
+          </Outline>
+          <Fill>
+            <SolidBrush color="255, 255, 0" />
+          </Fill>
+        </ClosedShape>
+      </SubShapes>
+    </Instance>
+    <Instance shapeName="Shape_303" zorder="1" guid="43ec2fa1-bf22-4b71-9477-b6ca7b97f0b0" name="UART" component="SCB_P4_v3_20">
+      <Location x="450" y="307.4839" />
+      <Size width="81" height="65.98871" />
+      <SubShapes>
+        <Annotation>
+          <Location x="487.7978" y="367.5508" />
+          <Text>Standard</Text>
+          <Expression><![CDATA[`= ((EZI2C == $ScbMode) || 
+((I2C == $ScbMode) && (I2C_SLAVE == $I2cMode))) ? "Slave" : 
+((I2C == $ScbMode) && (I2C_MASTER == $I2cMode)) ? "Master" : 
+ ((I2C == $ScbMode) && (I2C_MULTI_MASTER == $I2cMode)) ? "Multi-Master" : 
+ ((I2C == $ScbMode) && (I2C_MULTI_MASTER_SLAVE == $I2cMode)) ? "Multi-Master-Slave" : 
+((SPI == $ScbMode) && (MOTOROLA == $SpiSubMode)) ? "Motorola" : 
+((SPI == $ScbMode) && (TI_COINCIDES == $SpiSubMode)) ? "TI (Start Coincides)" : 
+((SPI == $ScbMode) && (TI_PRECEDES == $SpiSubMode))  ? "TI (Start Precedes)" : 
+ ((SPI == $ScbMode) && (NS == $SpiSubMode)) ? "Microwire" : 
+ ((UART == $ScbMode) && (STANDARD == $UartSubMode)) ? "Standard" : 
+ ((UART == $ScbMode) && (SMART_CARD == $UartSubMode)) ? "SmartCard" : 
+ ((UART == $ScbMode) && (IRDA == $UartSubMode)) ? "IrDA" : "Unconfigured"`]]></Expression>
+          <Fill>
+            <SolidBrush color="0, 0, 0" />
+          </Fill>
+          <Font value="Microsoft Sans Serif, 8pt" />
+          <TextAlignment value="TopRight" />
+        </Annotation>
+        <Rectangle>
+          <Location x="450" y="330" />
+          <Size width="72" height="36" />
+          <Outline dashStyle="Solid" startCap="Round" endCap="Square" lineJoin="Round" weight="1">
+            <SolidBrush color="0, 0, 0" />
+          </Outline>
+          <Fill>
+            <SolidBrush color="224, 224, 224" />
+          </Fill>
+        </Rectangle>
+        <Rectangle>
+          <Location x="450" y="318" />
+          <Size width="72" height="12" />
+          <Outline dashStyle="Solid" startCap="Round" endCap="Square" lineJoin="Round" weight="1">
+            <SolidBrush color="0, 0, 0" />
+          </Outline>
+          <Fill>
+            <SolidBrush color="135, 206, 235" />
+          </Fill>
+        </Rectangle>
+        <Annotation>
+          <Location x="474.2634" y="319.9105" />
+          <Text>UART</Text>
+          <Expression><![CDATA[`= (I2C == $ScbMode) ? "I2C" : 
+(SPI == $ScbMode) ? "SPI" : 
+(UART == $ScbMode) ? "UART" : 
+(EZI2C == $ScbMode) ? "EZI2C" :
+"SCB"`]]></Expression>
+          <Fill>
+            <SolidBrush color="0, 0, 0" />
+          </Fill>
+          <Font value="Microsoft Sans Serif, 10pt" />
+          <TextAlignment value="TopCenter" />
+        </Annotation>
+        <Annotation>
+          <Location x="493.9431" y="307.4839" />
+          <Text>UART</Text>
+          <Expression>`= $INSTANCE_NAME`</Expression>
+          <Fill>
+            <SolidBrush color="0, 0, 0" />
+          </Fill>
+          <Font value="Microsoft Sans Serif, 10pt" />
+          <TextAlignment value="TopRight" />
+        </Annotation>
+        <Terminal name="UART.interrupt" type="Instance Digital Output">
+          <Location x="528" y="342" />
+          <ShowWireGuide value="true" />
+        </Terminal>
+        <Annotation>
+          <Location x="483.1768" y="337.7764" />
+          <Text>interrupt</Text>
+          <TextAlignment value="MiddleRight" />
+        </Annotation>
+      </SubShapes>
+    </Instance>
+    <Instance shapeName="Shape_304" zorder="2" guid="bf8987a2-b642-4e10-bcfe-deb3503fa9b9" name="UART_RX_ISR" component="cy_isr_v1_70">
+      <Location x="525" y="337" />
+      <Size width="98.87494" height="10" />
+      <SubShapes>
+        <Rectangle>
+          <Location x="534" y="337" />
+          <Size width="18" height="10" />
+          <Outline dashStyle="Solid" startCap="Flat" endCap="Flat" lineJoin="Miter" weight="0">
+            <SolidBrush color="0, 0, 0" />
+          </Outline>
+          <Fill>
+            <SolidBrush color="220, 220, 220" />
+          </Fill>
+        </Rectangle>
+        <Terminal name="UART_RX_ISR.int_signal" type="Instance Digital Input">
+          <Location x="528" y="342" />
+          <ShowWireGuide value="true" />
+        </Terminal>
+        <Annotation>
+          <Location x="554.4658" y="337.9384" />
+          <Text>UART_RX_ISR</Text>
+          <Expression>`=$INSTANCE_NAME`</Expression>
+          <Fill>
+            <SolidBrush color="0, 0, 0" />
+          </Fill>
+          <Font value="Microsoft Sans Serif, 10pt" />
+          <TextAlignment value="TopLeft" />
+        </Annotation>
+        <ClosedShape>
+          <Point x="537.0062" y="345.0002" />
+          <Point x="540.9658" y="342.7693" />
+          <Point x="540.9658" y="344.0242" />
+          <Point x="544.3254" y="341.7934" />
+          <Point x="544.3254" y="343.0482" />
+          <Point x="549.005" y="339.0049" />
+          <Point x="548.985" y="339.0049" />
+          <Point x="544.9054" y="341.2357" />
+          <Point x="544.9254" y="341.2357" />
+          <Point x="544.9254" y="339.9808" />
+          <Point x="541.5657" y="342.2116" />
+          <Point x="541.5657" y="340.9568" />
+          <Point x="537.0062" y="345.0002" />
+          <Outline dashStyle="Solid" startCap="Flat" endCap="Flat" lineJoin="Miter" weight="0">
+            <SolidBrush color="0, 0, 0" />
+          </Outline>
+          <Fill>
+            <SolidBrush color="255, 255, 0" />
+          </Fill>
+        </ClosedShape>
+      </SubShapes>
+    </Instance>
+  </Page>
+</Document>

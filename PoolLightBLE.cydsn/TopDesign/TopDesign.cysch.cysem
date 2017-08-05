@@ -1,0 +1,1693 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" release="PSoC Creator  4.0 Update 1" xmlns="http://cypress.com/xsd/cysem">
+  <Instances count="6">
+    <Instance guid="17773bd1-6902-4366-a62d-819ebc1c2795" name="BLE" component="BLE_v3_30">
+      <Parameter name="AutopopulateWhitelist">
+        <Value>true</Value>
+      </Parameter>
+      <Parameter name="CY_CONST_CONFIG">
+        <Value>true</Value>
+      </Parameter>
+      <Parameter name="CY_FITTER_NAME">
+        <Value>BLE_N</Value>
+        <Expression>`=GetShortInstanceName()`</Expression>
+      </Parameter>
+      <Parameter name="CY_MAJOR_VERSION">
+        <Value>3</Value>
+        <Expression>`=GetMajorVersion()`</Expression>
+      </Parameter>
+      <Parameter name="CY_MINOR_VERSION">
+        <Value>30</Value>
+        <Expression>`=GetMinorVersion()`</Expression>
+      </Parameter>
+      <Parameter name="CY_REMOVE">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="CY_SUPPRESS_API_GEN">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="CY_VERSION">
+        <Value>PSoC Creator  4.0 Update 1</Value>
+        <Expression>`=GetMarketingNameWithVersion()`</Expression>
+      </Parameter>
+      <Parameter name="EnableExternalPAcontrol">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="EnableExternalPrepWriteBuff">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="EnableL2capLogicalChannels">
+        <Value>true</Value>
+      </Parameter>
+      <Parameter name="EnableLinkLayerPrivacy">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="GapConfig">
+        <Value><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<CyGapConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DevAddress>00A050000000</DevAddress>
+  <SiliconGeneratedAddress>true</SiliconGeneratedAddress>
+  <MtuSize>23</MtuSize>
+  <MaxTxPayloadSize>27</MaxTxPayloadSize>
+  <MaxRxPayloadSize>27</MaxRxPayloadSize>
+  <TxPowerLevel>0</TxPowerLevel>
+  <TxPowerLevelConnection>0</TxPowerLevelConnection>
+  <TxPowerLevelAdvScan>0</TxPowerLevelAdvScan>
+  <SecurityConfig>
+    <SecurityMode>SECURITY_MODE_1</SecurityMode>
+    <SecurityLevel>NO_SECURITY</SecurityLevel>
+    <StrictPairing>false</StrictPairing>
+    <KeypressNotifications>false</KeypressNotifications>
+    <IOCapability>NO_INPUT_NO_OUTPUT</IOCapability>
+    <PairingMethod>JUST_WORKS</PairingMethod>
+    <Bonding>NO_BOND</Bonding>
+    <MaxBondedDevices>4</MaxBondedDevices>
+    <AutoPopWhitelistBondedDev>true</AutoPopWhitelistBondedDev>
+    <MaxWhitelistSize>8</MaxWhitelistSize>
+    <EnableLinkLayerPrivacy>false</EnableLinkLayerPrivacy>
+    <MaxResolvableDevices>8</MaxResolvableDevices>
+    <EncryptionKeySize>16</EncryptionKeySize>
+  </SecurityConfig>
+  <AdvertisementConfig>
+    <AdvScanMode>FAST_CONNECTION</AdvScanMode>
+    <AdvFastScanInterval>
+      <Minimum>500</Minimum>
+      <Maximum>500</Maximum>
+    </AdvFastScanInterval>
+    <AdvReducedScanInterval>
+      <Minimum>1000</Minimum>
+      <Maximum>10240</Maximum>
+    </AdvReducedScanInterval>
+    <AdvDiscoveryMode>GENERAL</AdvDiscoveryMode>
+    <AdvType>CONNECTABLE_UNDIRECTED</AdvType>
+    <AdvFilterPolicy>SCAN_REQUEST_ANY_CONNECT_REQUEST_ANY</AdvFilterPolicy>
+    <AdvChannelMap>ALL</AdvChannelMap>
+    <AdvFastTimeout>0</AdvFastTimeout>
+    <AdvReducedTimeout>150</AdvReducedTimeout>
+    <EnableReducedAdvertising>false</EnableReducedAdvertising>
+    <ConnectionInterval>
+      <Minimum>7.5</Minimum>
+      <Maximum>50</Maximum>
+    </ConnectionInterval>
+    <ConnectionSlaveLatency>0</ConnectionSlaveLatency>
+    <ConnectionTimeout>10000</ConnectionTimeout>
+  </AdvertisementConfig>
+  <ScanConfig>
+    <ScanFastWindow>30</ScanFastWindow>
+    <ScanFastInterval>30</ScanFastInterval>
+    <ScanTimeout>10</ScanTimeout>
+    <ScanReducedWindow>1125</ScanReducedWindow>
+    <ScanReducedInterval>1280</ScanReducedInterval>
+    <ScanReducedTimeout>150</ScanReducedTimeout>
+    <EnableReducedScan>true</EnableReducedScan>
+    <ScanDiscoveryMode>GENERAL</ScanDiscoveryMode>
+    <ScanningState>ACTIVE</ScanningState>
+    <ScanFilterPolicy>ACCEPT_ALL_ADV_PACKETS</ScanFilterPolicy>
+    <DuplicateFiltering>false</DuplicateFiltering>
+    <ConnectionInterval>
+      <Minimum>7.5</Minimum>
+      <Maximum>50</Maximum>
+    </ConnectionInterval>
+    <ConnectionSlaveLatency>0</ConnectionSlaveLatency>
+    <ConnectionTimeout>10000</ConnectionTimeout>
+  </ScanConfig>
+  <AdvertisementPacket>
+    <PacketType>ADVERTISEMENT</PacketType>
+    <Items>
+      <CyADStructure>
+        <ADType>1</ADType>
+        <ADData>06</ADData>
+      </CyADStructure>
+      <CyADStructure>
+        <ADType>7</ADType>
+        <ADData>4C:5A:A5:AB:20:6A:6E:8B:7C:4D:74:C9:3A:80:28:DB</ADData>
+      </CyADStructure>
+    </Items>
+    <IncludedServicesServiceUuid>
+      <int>12</int>
+    </IncludedServicesServiceUuid>
+    <IncludedServicesServiceSolicitation />
+    <IncludedServicesServiceData />
+  </AdvertisementPacket>
+  <ScanResponsePacket>
+    <PacketType>SCAN_RESPONSE</PacketType>
+    <Items>
+      <CyADStructure>
+        <ADType>9</ADType>
+        <ADData>47:59:50:6F:6F:6C:4C:69:67:68:74</ADData>
+      </CyADStructure>
+      <CyADStructure>
+        <ADType>10</ADType>
+        <ADData>00</ADData>
+      </CyADStructure>
+      <CyADStructure>
+        <ADType>25</ADType>
+        <ADData>00:00</ADData>
+      </CyADStructure>
+    </Items>
+    <IncludedServicesServiceUuid />
+    <IncludedServicesServiceSolicitation />
+    <IncludedServicesServiceData />
+  </ScanResponsePacket>
+</CyGapConfiguration>]]></Value>
+      </Parameter>
+      <Parameter name="HalBaudRate">
+        <Value>115200</Value>
+      </Parameter>
+      <Parameter name="HalCtsEnable">
+        <Value>true</Value>
+      </Parameter>
+      <Parameter name="HalCtsPolarity">
+        <Value>0</Value>
+        <Expression>SCB_P4__ACTIVE_LOW</Expression>
+      </Parameter>
+      <Parameter name="HalRtsEnable">
+        <Value>true</Value>
+      </Parameter>
+      <Parameter name="HalRtsPolarity">
+        <Value>0</Value>
+        <Expression>SCB_P4__ACTIVE_LOW</Expression>
+      </Parameter>
+      <Parameter name="HalRtsTriggerLevel">
+        <Value>4</Value>
+      </Parameter>
+      <Parameter name="HciMode">
+        <Value>0</Value>
+        <Expression>HciUart</Expression>
+      </Parameter>
+      <Parameter name="ImportFilePath">
+        <Value />
+      </Parameter>
+      <Parameter name="INSTANCE_NAME">
+        <Value>BLE</Value>
+      </Parameter>
+      <Parameter name="KeypressNotifications">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="L2capMpsSize">
+        <Value>23</Value>
+      </Parameter>
+      <Parameter name="L2capMtuSize">
+        <Value>23</Value>
+      </Parameter>
+      <Parameter name="L2capNumChannels">
+        <Value>1</Value>
+      </Parameter>
+      <Parameter name="L2capNumPsm">
+        <Value>1</Value>
+      </Parameter>
+      <Parameter name="LLMaxRxPayloadSize">
+        <Value>27</Value>
+      </Parameter>
+      <Parameter name="LLMaxTxPayloadSize">
+        <Value>27</Value>
+      </Parameter>
+      <Parameter name="MaxAttrNoOfBuffer">
+        <Value>1</Value>
+      </Parameter>
+      <Parameter name="MaxBondedDevices">
+        <Value>4</Value>
+      </Parameter>
+      <Parameter name="MaxResolvableDevices">
+        <Value>8</Value>
+      </Parameter>
+      <Parameter name="MaxWhitelistSize">
+        <Value>8</Value>
+      </Parameter>
+      <Parameter name="Mode">
+        <Value>0</Value>
+        <Expression>Profile</Expression>
+      </Parameter>
+      <Parameter name="ProfileConfig">
+        <Value><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<Profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1" DisplayName="Custom" Name="Custom" Type="org.bluetooth.profile.custom">
+  <CyProfileRole ID="2" DisplayName="Server" Name="Server">
+    <CyService ID="3" DisplayName="Generic Access" Name="Generic Access" Type="org.bluetooth.service.generic_access" UUID="1800">
+      <CyCharacteristic ID="4" DisplayName="Device Name" Name="Device Name" Type="org.bluetooth.characteristic.gap.device_name" UUID="2A00">
+        <Field Name="Name">
+          <DataFormat>utf8s</DataFormat>
+          <ByteLength>11</ByteLength>
+          <FillRequirement>C1</FillRequirement>
+          <ValueType>BASIC</ValueType>
+          <GeneralValue>GYPoolLight</GeneralValue>
+          <ArrayValue />
+        </Field>
+        <Properties>
+          <Property Type="READ" Present="true" Mandatory="true" />
+          <Property Type="WRITE" Present="false" Mandatory="false" />
+        </Properties>
+        <Permission />
+      </CyCharacteristic>
+      <CyCharacteristic ID="5" DisplayName="Appearance" Name="Appearance" Type="org.bluetooth.characteristic.gap.appearance" UUID="2A01">
+        <Field Name="Category">
+          <DataFormat>16bit</DataFormat>
+          <ByteLength>2</ByteLength>
+          <FillRequirement>C1</FillRequirement>
+          <ValueType>ENUM</ValueType>
+          <ArrayValue />
+        </Field>
+        <Properties>
+          <Property Type="READ" Present="true" Mandatory="true" />
+        </Properties>
+        <Permission />
+      </CyCharacteristic>
+      <CyCharacteristic ID="6" DisplayName="Peripheral Preferred Connection Parameters" Name="Peripheral Preferred Connection Parameters" Type="org.bluetooth.characteristic.gap.peripheral_preferred_connection_parameters" UUID="2A04">
+        <Field Name="Minimum Connection Interval">
+          <DataFormat>uint16</DataFormat>
+          <ByteLength>2</ByteLength>
+          <Range>
+            <IsDeclared>true</IsDeclared>
+            <Minimum>6</Minimum>
+            <Maximum>3200</Maximum>
+          </Range>
+          <FillRequirement>C1</FillRequirement>
+          <ValueType>BASIC</ValueType>
+          <GeneralValue>0x0006</GeneralValue>
+          <ArrayValue />
+        </Field>
+        <Field Name="Maximum Connection Interval">
+          <DataFormat>uint16</DataFormat>
+          <ByteLength>2</ByteLength>
+          <Range>
+            <IsDeclared>true</IsDeclared>
+            <Minimum>6</Minimum>
+            <Maximum>3200</Maximum>
+          </Range>
+          <FillRequirement>C1</FillRequirement>
+          <ValueType>BASIC</ValueType>
+          <GeneralValue>0x0028</GeneralValue>
+          <ArrayValue />
+        </Field>
+        <Field Name="Slave Latency">
+          <DataFormat>uint16</DataFormat>
+          <ByteLength>2</ByteLength>
+          <Range>
+            <IsDeclared>true</IsDeclared>
+            <Minimum>0</Minimum>
+            <Maximum>1000</Maximum>
+          </Range>
+          <FillRequirement>C1</FillRequirement>
+          <ValueType>BASIC</ValueType>
+          <GeneralValue>0</GeneralValue>
+          <ArrayValue />
+        </Field>
+        <Field Name="Connection Supervision Timeout Multiplier">
+          <DataFormat>uint16</DataFormat>
+          <ByteLength>2</ByteLength>
+          <Range>
+            <IsDeclared>true</IsDeclared>
+            <Minimum>10</Minimum>
+            <Maximum>3200</Maximum>
+          </Range>
+          <FillRequirement>C1</FillRequirement>
+          <ValueType>BASIC</ValueType>
+          <GeneralValue>0x03E8</GeneralValue>
+          <ArrayValue />
+        </Field>
+        <Properties>
+          <Property Type="READ" Present="true" Mandatory="true" />
+        </Properties>
+        <Permission />
+      </CyCharacteristic>
+      <CyCharacteristic ID="7" DisplayName="Central Address Resolution" Name="Central Address Resolution" Type="org.bluetooth.characteristic.gap.central_address_resolution" UUID="2AA6">
+        <Field Name="Central Address Resolution Support">
+          <DataFormat>uint8</DataFormat>
+          <ByteLength>1</ByteLength>
+          <ValueType>ENUM</ValueType>
+          <ArrayValue />
+        </Field>
+        <Properties>
+          <Property Type="READ" Present="true" Mandatory="true" />
+        </Properties>
+        <Permission />
+      </CyCharacteristic>
+      <CyCharacteristic ID="8" DisplayName="Resolvable Private Address Only" Name="Resolvable Private Address Only" Type="org.bluetooth.characteristic.gap.resolvable_private_address_only" UUID="2AC9">
+        <Field Name="Resolvable Private Address Only">
+          <DataFormat>uint8</DataFormat>
+          <ByteLength>1</ByteLength>
+          <ValueType>ENUM</ValueType>
+          <ArrayValue />
+        </Field>
+        <Properties>
+          <Property Type="READ" Present="true" Mandatory="true" />
+        </Properties>
+        <Permission />
+      </CyCharacteristic>
+      <Declaration>Primary</Declaration>
+      <IncludedServices />
+    </CyService>
+    <CyService ID="9" DisplayName="Generic Attribute" Name="Generic Attribute" Type="org.bluetooth.service.generic_attribute" UUID="1801">
+      <CyCharacteristic ID="10" DisplayName="Service Changed" Name="Service Changed" Type="org.bluetooth.characteristic.gatt.service_changed" UUID="2A05">
+        <CyDescriptor ID="11" DisplayName="Client Characteristic Configuration" Name="Client Characteristic Configuration" Type="org.bluetooth.descriptor.gatt.client_characteristic_configuration" UUID="2902">
+          <Field Name="Properties">
+            <DataFormat>16bit</DataFormat>
+            <ByteLength>2</ByteLength>
+            <Range>
+              <IsDeclared>true</IsDeclared>
+              <Minimum>0</Minimum>
+              <Maximum>3</Maximum>
+            </Range>
+            <ValueType>BITFIELD</ValueType>
+            <Bit>
+              <Index>0</Index>
+              <Size>1</Size>
+              <Value>0</Value>
+              <Enumerations>
+                <Enumeration key="0" value="Notifications disabled" />
+                <Enumeration key="1" value="Notifications enabled" />
+              </Enumerations>
+            </Bit>
+            <Bit>
+              <Index>1</Index>
+              <Size>1</Size>
+              <Value>0</Value>
+              <Enumerations>
+                <Enumeration key="0" value="Indications disabled" />
+                <Enumeration key="1" value="Indications enabled" />
+              </Enumerations>
+            </Bit>
+            <ArrayValue />
+          </Field>
+          <Properties>
+            <Property Type="READ" Present="true" Mandatory="true" />
+            <Property Type="WRITE" Present="true" Mandatory="true" />
+          </Properties>
+          <Permission>
+            <AccessPermission>READ_WRITE</AccessPermission>
+          </Permission>
+        </CyDescriptor>
+        <Field Name="Start of Affected Attribute Handle Range">
+          <DataFormat>uint16</DataFormat>
+          <ByteLength>2</ByteLength>
+          <Range>
+            <IsDeclared>true</IsDeclared>
+            <Minimum>1</Minimum>
+            <Maximum>65535</Maximum>
+          </Range>
+          <ValueType>BASIC</ValueType>
+          <ArrayValue />
+        </Field>
+        <Field Name="End of Affected Attribute Handle Range">
+          <DataFormat>uint16</DataFormat>
+          <ByteLength>2</ByteLength>
+          <Range>
+            <IsDeclared>true</IsDeclared>
+            <Minimum>1</Minimum>
+            <Maximum>65535</Maximum>
+          </Range>
+          <ValueType>BASIC</ValueType>
+          <ArrayValue />
+        </Field>
+        <Properties>
+          <Property Type="INDICATE" Present="true" Mandatory="true" />
+        </Properties>
+        <Permission>
+          <AccessPermission>NONE</AccessPermission>
+        </Permission>
+      </CyCharacteristic>
+      <Declaration>Primary</Declaration>
+      <IncludedServices />
+    </CyService>
+    <CyService ID="12" DisplayName="PoolLightService" Name="Custom Service" Type="org.bluetooth.service.custom" UUID="DB28803AC9744D7C8B6E6A20ABA55A4C">
+      <CyCharacteristic ID="13" DisplayName="Red_Component" Name="Custom Characteristic" Type="org.bluetooth.characteristic.custom" UUID="58BFD344F7F84499AE5D095E5A8843D4">
+        <CyDescriptor ID="21" DisplayName="Characteristic User Description" Name="Characteristic User Description" Type="org.bluetooth.descriptor.gatt.characteristic_user_description" UUID="2901">
+          <Field Name="User Description">
+            <DataFormat>utf8s</DataFormat>
+            <ByteLength>13</ByteLength>
+            <ValueType>BASIC</ValueType>
+            <GeneralValue>Red Component</GeneralValue>
+            <ArrayValue />
+          </Field>
+          <Properties>
+            <Property Type="READ" Present="true" Mandatory="false" />
+            <Property Type="WRITE" Present="false" Mandatory="false" />
+          </Properties>
+          <Permission />
+        </CyDescriptor>
+        <Field Name="New field">
+          <DataFormat>uint8</DataFormat>
+          <ByteLength>1</ByteLength>
+          <ValueType>BASIC</ValueType>
+          <ArrayValue />
+        </Field>
+        <Properties>
+          <Property Type="BROADCAST" Present="false" Mandatory="false" />
+          <Property Type="READ" Present="true" Mandatory="false" />
+          <Property Type="WRITE" Present="true" Mandatory="false" />
+          <Property Type="WRITE_WITHOUT_RESPONSE" Present="false" Mandatory="false" />
+          <Property Type="NOTIFY" Present="false" Mandatory="false" />
+          <Property Type="INDICATE" Present="false" Mandatory="false" />
+          <Property Type="AUTHENTICATED_SIGNED_WRITES" Present="false" Mandatory="false" />
+          <Property Type="RELIABLE_WRITE" Present="false" Mandatory="false" />
+          <Property Type="WRITABLE_AUXILIARIES" Present="false" Mandatory="false" />
+        </Properties>
+        <Permission>
+          <AccessPermission>READ_WRITE</AccessPermission>
+        </Permission>
+      </CyCharacteristic>
+      <CyCharacteristic ID="15" DisplayName="Green Component" Name="Custom Characteristic" Type="org.bluetooth.characteristic.custom" UUID="387B8EA27C464DE1A3362B79579C2FFE">
+        <CyDescriptor ID="22" DisplayName="Characteristic User Description" Name="Characteristic User Description" Type="org.bluetooth.descriptor.gatt.characteristic_user_description" UUID="2901">
+          <Field Name="User Description">
+            <DataFormat>utf8s</DataFormat>
+            <ByteLength>15</ByteLength>
+            <ValueType>BASIC</ValueType>
+            <GeneralValue>Green Component</GeneralValue>
+            <ArrayValue />
+          </Field>
+          <Properties>
+            <Property Type="READ" Present="true" Mandatory="false" />
+            <Property Type="WRITE" Present="false" Mandatory="false" />
+          </Properties>
+          <Permission />
+        </CyDescriptor>
+        <Field Name="New field">
+          <DataFormat>uint8</DataFormat>
+          <ByteLength>1</ByteLength>
+          <ValueType>BASIC</ValueType>
+          <ArrayValue />
+        </Field>
+        <Properties>
+          <Property Type="BROADCAST" Present="false" Mandatory="false" />
+          <Property Type="READ" Present="true" Mandatory="false" />
+          <Property Type="WRITE" Present="true" Mandatory="false" />
+          <Property Type="WRITE_WITHOUT_RESPONSE" Present="false" Mandatory="false" />
+          <Property Type="NOTIFY" Present="false" Mandatory="false" />
+          <Property Type="INDICATE" Present="false" Mandatory="false" />
+          <Property Type="AUTHENTICATED_SIGNED_WRITES" Present="false" Mandatory="false" />
+          <Property Type="RELIABLE_WRITE" Present="false" Mandatory="false" />
+          <Property Type="WRITABLE_AUXILIARIES" Present="false" Mandatory="false" />
+        </Properties>
+        <Permission>
+          <AccessPermission>READ_WRITE</AccessPermission>
+        </Permission>
+      </CyCharacteristic>
+      <CyCharacteristic ID="17" DisplayName="Blue Component" Name="Custom Characteristic" Type="org.bluetooth.characteristic.custom" UUID="D3F94571FD9E4A9DA4FCDB03EB10FB69">
+        <CyDescriptor ID="23" DisplayName="Characteristic User Description" Name="Characteristic User Description" Type="org.bluetooth.descriptor.gatt.characteristic_user_description" UUID="2901">
+          <Field Name="User Description">
+            <DataFormat>utf8s</DataFormat>
+            <ByteLength>14</ByteLength>
+            <ValueType>BASIC</ValueType>
+            <GeneralValue>Blue Component</GeneralValue>
+            <ArrayValue />
+          </Field>
+          <Properties>
+            <Property Type="READ" Present="true" Mandatory="false" />
+            <Property Type="WRITE" Present="false" Mandatory="false" />
+          </Properties>
+          <Permission />
+        </CyDescriptor>
+        <Field Name="New field">
+          <DataFormat>uint8</DataFormat>
+          <ByteLength>1</ByteLength>
+          <ValueType>BASIC</ValueType>
+          <ArrayValue />
+        </Field>
+        <Properties>
+          <Property Type="BROADCAST" Present="false" Mandatory="false" />
+          <Property Type="READ" Present="true" Mandatory="false" />
+          <Property Type="WRITE" Present="true" Mandatory="false" />
+          <Property Type="WRITE_WITHOUT_RESPONSE" Present="false" Mandatory="false" />
+          <Property Type="NOTIFY" Present="false" Mandatory="false" />
+          <Property Type="INDICATE" Present="false" Mandatory="false" />
+          <Property Type="AUTHENTICATED_SIGNED_WRITES" Present="false" Mandatory="false" />
+          <Property Type="RELIABLE_WRITE" Present="false" Mandatory="false" />
+          <Property Type="WRITABLE_AUXILIARIES" Present="false" Mandatory="false" />
+        </Properties>
+        <Permission>
+          <AccessPermission>READ_WRITE</AccessPermission>
+        </Permission>
+      </CyCharacteristic>
+      <CyCharacteristic ID="27" DisplayName="CPU Temperature" Name="Custom Characteristic" Type="org.bluetooth.characteristic.custom" UUID="2B8482A3E4204C709299EA6ADF72EA9C">
+        <CyDescriptor ID="30" DisplayName="Characteristic User Description" Name="Characteristic User Description" Type="org.bluetooth.descriptor.gatt.characteristic_user_description" UUID="2901">
+          <Field Name="User Description">
+            <DataFormat>utf8s</DataFormat>
+            <ByteLength>15</ByteLength>
+            <ValueType>BASIC</ValueType>
+            <GeneralValue>CPU Temperature</GeneralValue>
+            <ArrayValue />
+          </Field>
+          <Properties>
+            <Property Type="READ" Present="true" Mandatory="false" />
+            <Property Type="WRITE" Present="false" Mandatory="false" />
+          </Properties>
+          <Permission />
+        </CyDescriptor>
+        <Field Name="New field">
+          <DataFormat>uint8</DataFormat>
+          <ByteLength>1</ByteLength>
+          <ValueType>BASIC</ValueType>
+          <ArrayValue />
+        </Field>
+        <Properties>
+          <Property Type="BROADCAST" Present="false" Mandatory="false" />
+          <Property Type="READ" Present="true" Mandatory="false" />
+          <Property Type="WRITE" Present="false" Mandatory="false" />
+          <Property Type="WRITE_WITHOUT_RESPONSE" Present="false" Mandatory="false" />
+          <Property Type="NOTIFY" Present="false" Mandatory="false" />
+          <Property Type="INDICATE" Present="false" Mandatory="false" />
+          <Property Type="AUTHENTICATED_SIGNED_WRITES" Present="false" Mandatory="false" />
+          <Property Type="RELIABLE_WRITE" Present="false" Mandatory="false" />
+          <Property Type="WRITABLE_AUXILIARIES" Present="false" Mandatory="false" />
+        </Properties>
+        <Permission />
+      </CyCharacteristic>
+      <CyCharacteristic ID="25" DisplayName="LED Temperature" Name="Custom Characteristic" Type="org.bluetooth.characteristic.custom" UUID="DDCE27F0717547C6AC032F5F0BA44EFB">
+        <CyDescriptor ID="29" DisplayName="Characteristic User Description" Name="Characteristic User Description" Type="org.bluetooth.descriptor.gatt.characteristic_user_description" UUID="2901">
+          <Field Name="User Description">
+            <DataFormat>utf8s</DataFormat>
+            <ByteLength>15</ByteLength>
+            <ValueType>BASIC</ValueType>
+            <GeneralValue>LED Temperature</GeneralValue>
+            <ArrayValue />
+          </Field>
+          <Properties>
+            <Property Type="READ" Present="true" Mandatory="false" />
+            <Property Type="WRITE" Present="false" Mandatory="false" />
+          </Properties>
+          <Permission />
+        </CyDescriptor>
+        <Field Name="New field">
+          <DataFormat>uint8</DataFormat>
+          <ByteLength>1</ByteLength>
+          <ValueType>BASIC</ValueType>
+          <ArrayValue />
+        </Field>
+        <Properties>
+          <Property Type="BROADCAST" Present="false" Mandatory="false" />
+          <Property Type="READ" Present="true" Mandatory="false" />
+          <Property Type="WRITE" Present="false" Mandatory="false" />
+          <Property Type="WRITE_WITHOUT_RESPONSE" Present="false" Mandatory="false" />
+          <Property Type="NOTIFY" Present="false" Mandatory="false" />
+          <Property Type="INDICATE" Present="false" Mandatory="false" />
+          <Property Type="AUTHENTICATED_SIGNED_WRITES" Present="false" Mandatory="false" />
+          <Property Type="RELIABLE_WRITE" Present="false" Mandatory="false" />
+          <Property Type="WRITABLE_AUXILIARIES" Present="false" Mandatory="false" />
+        </Properties>
+        <Permission />
+      </CyCharacteristic>
+      <Declaration>PrimarySingleInstance</Declaration>
+      <IncludedServices />
+    </CyService>
+    <ProfileRoleIndex>0</ProfileRoleIndex>
+    <RoleType>SERVER</RoleType>
+  </CyProfileRole>
+  <GapRole>PERIPHERAL</GapRole>
+</Profile>]]></Value>
+      </Parameter>
+      <Parameter name="SharingMode">
+        <Value>0</Value>
+        <Expression>NoneSharing</Expression>
+      </Parameter>
+      <Parameter name="StackMode">
+        <Value>3</Value>
+        <Expression>ReleaseMode</Expression>
+      </Parameter>
+      <Parameter name="StrictPairing">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="UseDeepSleep">
+        <Value>true</Value>
+      </Parameter>
+    </Instance>
+    <Instance guid="35c87239-3fcc-4616-a568-92ea77ba21ec" name="PeriodicTimer" component="TCPWM_P4_v2_10">
+      <Parameter name="Clock_CheckTolerance">
+        <Value>true</Value>
+      </Parameter>
+      <Parameter name="Clock_desired_freq">
+        <Value>12</Value>
+      </Parameter>
+      <Parameter name="Clock_desired_freq_unit">
+        <Value>6</Value>
+      </Parameter>
+      <Parameter name="Clock_divisor">
+        <Value>1</Value>
+      </Parameter>
+      <Parameter name="Clock_FractDividerDenominator">
+        <Value>0</Value>
+      </Parameter>
+      <Parameter name="Clock_FractDividerNumerator">
+        <Value>0</Value>
+      </Parameter>
+      <Parameter name="Clock_FractDividerUsed">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="Clock_is_direct">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="Clock_is_divider">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="Clock_is_freq">
+        <Value>true</Value>
+      </Parameter>
+      <Parameter name="Clock_minus_tolerance">
+        <Value>5</Value>
+      </Parameter>
+      <Parameter name="Clock_ph_align_clock_id">
+        <Value />
+      </Parameter>
+      <Parameter name="Clock_ph_align_clock_name">
+        <Value />
+      </Parameter>
+      <Parameter name="Clock_plus_tolerance">
+        <Value>5</Value>
+      </Parameter>
+      <Parameter name="Clock_source_clock_id">
+        <Value />
+      </Parameter>
+      <Parameter name="Clock_source_clock_name">
+        <Value />
+      </Parameter>
+      <Parameter name="CY_CONST_CONFIG">
+        <Value>true</Value>
+      </Parameter>
+      <Parameter name="CY_FITTER_NAME">
+        <Value>TCPWM_N</Value>
+        <Expression>`=GetShortInstanceName()`</Expression>
+      </Parameter>
+      <Parameter name="CY_MAJOR_VERSION">
+        <Value>2</Value>
+        <Expression>`=GetMajorVersion()`</Expression>
+      </Parameter>
+      <Parameter name="CY_MINOR_VERSION">
+        <Value>10</Value>
+        <Expression>`=GetMinorVersion()`</Expression>
+      </Parameter>
+      <Parameter name="CY_REMOVE">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="CY_SUPPRESS_API_GEN">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="CY_VERSION">
+        <Value>PSoC Creator  4.0 Update 1</Value>
+        <Expression>`=GetMarketingNameWithVersion()`</Expression>
+      </Parameter>
+      <Parameter name="INSTANCE_NAME">
+        <Value>PeriodicTimer</Value>
+      </Parameter>
+      <Parameter name="PWMCompare">
+        <Value>65535</Value>
+        <Expression>65535u</Expression>
+      </Parameter>
+      <Parameter name="PWMCompareBuf">
+        <Value>65535</Value>
+        <Expression>65535u</Expression>
+      </Parameter>
+      <Parameter name="PWMCompareSwap">
+        <Value>0</Value>
+        <Expression>SWAP_DISABLE</Expression>
+      </Parameter>
+      <Parameter name="PWMCountMode">
+        <Value>3</Value>
+        <Expression>TRIG_LEVEL</Expression>
+      </Parameter>
+      <Parameter name="PWMCountPresent">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="PWMDeadTimeCycle">
+        <Value>0</Value>
+        <Expression>0u</Expression>
+      </Parameter>
+      <Parameter name="PWMInterruptMask">
+        <Value>1</Value>
+        <Expression>INTR_MASK_TC</Expression>
+      </Parameter>
+      <Parameter name="PWMKillEvent">
+        <Value>0</Value>
+        <Expression>ASYNCH</Expression>
+      </Parameter>
+      <Parameter name="PWMLinenSignal">
+        <Value>0</Value>
+        <Expression>DIRECT</Expression>
+      </Parameter>
+      <Parameter name="PWMLineSignal">
+        <Value>0</Value>
+        <Expression>DIRECT</Expression>
+      </Parameter>
+      <Parameter name="PWMMode">
+        <Value>4</Value>
+        <Expression>PWM</Expression>
+      </Parameter>
+      <Parameter name="PWMPeriod">
+        <Value>65535</Value>
+        <Expression>65535u</Expression>
+      </Parameter>
+      <Parameter name="PWMPeriodBuf">
+        <Value>65535</Value>
+        <Expression>65535u</Expression>
+      </Parameter>
+      <Parameter name="PWMPeriodSwap">
+        <Value>0</Value>
+        <Expression>SWAP_DISABLE</Expression>
+      </Parameter>
+      <Parameter name="PWMPrescaler">
+        <Value>0</Value>
+        <Expression>0u</Expression>
+      </Parameter>
+      <Parameter name="PWMReloadMode">
+        <Value>0</Value>
+        <Expression>TRIG_RISING</Expression>
+      </Parameter>
+      <Parameter name="PWMReloadPresent">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="PWMRunMode">
+        <Value>0</Value>
+        <Expression>Continuous</Expression>
+      </Parameter>
+      <Parameter name="PWMSetAlign">
+        <Value>0</Value>
+        <Expression>LEFT</Expression>
+      </Parameter>
+      <Parameter name="PWMStartMode">
+        <Value>0</Value>
+        <Expression>TRIG_RISING</Expression>
+      </Parameter>
+      <Parameter name="PWMStartPresent">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="PWMStopEvent">
+        <Value>0</Value>
+        <Expression>DONT_STOP</Expression>
+      </Parameter>
+      <Parameter name="PWMStopMode">
+        <Value>0</Value>
+        <Expression>TRIG_RISING</Expression>
+      </Parameter>
+      <Parameter name="PWMStopPresent">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="PWMSwitchMode">
+        <Value>0</Value>
+        <Expression>TRIG_RISING</Expression>
+      </Parameter>
+      <Parameter name="PWMSwitchPresent">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="QuadAutoStart">
+        <Value>true</Value>
+      </Parameter>
+      <Parameter name="QuadEncodingModes">
+        <Value>0</Value>
+        <Expression>X1</Expression>
+      </Parameter>
+      <Parameter name="QuadIndexMode">
+        <Value>0</Value>
+        <Expression>TRIG_RISING</Expression>
+      </Parameter>
+      <Parameter name="QuadIndexPresent">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="QuadInterruptMask">
+        <Value>1</Value>
+        <Expression>INTR_MASK_TC</Expression>
+      </Parameter>
+      <Parameter name="QuadPhiAMode">
+        <Value>3</Value>
+        <Expression>TRIG_LEVEL</Expression>
+      </Parameter>
+      <Parameter name="QuadPhiBMode">
+        <Value>3</Value>
+        <Expression>TRIG_LEVEL</Expression>
+      </Parameter>
+      <Parameter name="QuadStopMode">
+        <Value>0</Value>
+        <Expression>TRIG_RISING</Expression>
+      </Parameter>
+      <Parameter name="QuadStopPresent">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="TCCaptureMode">
+        <Value>0</Value>
+        <Expression>TRIG_RISING</Expression>
+      </Parameter>
+      <Parameter name="TCCapturePresent">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="TCCompare">
+        <Value>65535</Value>
+        <Expression>65535u</Expression>
+      </Parameter>
+      <Parameter name="TCCompareBuf">
+        <Value>65535</Value>
+        <Expression>65535u</Expression>
+      </Parameter>
+      <Parameter name="TCCompareSwap">
+        <Value>0</Value>
+        <Expression>SWAP_DISABLE</Expression>
+      </Parameter>
+      <Parameter name="TCCompCapMode">
+        <Value>2</Value>
+        <Expression>Capture</Expression>
+      </Parameter>
+      <Parameter name="TCCountingModes">
+        <Value>0</Value>
+        <Expression>COUNT_UP</Expression>
+      </Parameter>
+      <Parameter name="TCCountMode">
+        <Value>3</Value>
+        <Expression>TRIG_LEVEL</Expression>
+      </Parameter>
+      <Parameter name="TCCountPresent">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="TCInterruptMask">
+        <Value>1</Value>
+        <Expression>INTR_MASK_TC</Expression>
+      </Parameter>
+      <Parameter name="TCPeriod">
+        <Value>1000</Value>
+        <Expression>1000u</Expression>
+      </Parameter>
+      <Parameter name="TCPrescaler">
+        <Value>0</Value>
+        <Expression>0u</Expression>
+      </Parameter>
+      <Parameter name="TCPWMCapturePresent">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="TCPWMConfig">
+        <Value>1</Value>
+        <Expression>TIMER</Expression>
+      </Parameter>
+      <Parameter name="TCPWMCountPresent">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="TCPWMReloadPresent">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="TCPWMStartPresent">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="TCPWMStopPresent">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="TCReloadMode">
+        <Value>0</Value>
+        <Expression>TRIG_RISING</Expression>
+      </Parameter>
+      <Parameter name="TCReloadPresent">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="TCRunMode">
+        <Value>0</Value>
+        <Expression>Continuous</Expression>
+      </Parameter>
+      <Parameter name="TCStartMode">
+        <Value>0</Value>
+        <Expression>TRIG_RISING</Expression>
+      </Parameter>
+      <Parameter name="TCStartPresent">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="TCStopMode">
+        <Value>0</Value>
+        <Expression>TRIG_RISING</Expression>
+      </Parameter>
+      <Parameter name="TCStopPresent">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="TermMode_capture">
+        <Value>0</Value>
+      </Parameter>
+      <Parameter name="TermMode_cc">
+        <Value>0</Value>
+      </Parameter>
+      <Parameter name="TermMode_clock">
+        <Value>0</Value>
+      </Parameter>
+      <Parameter name="TermMode_count">
+        <Value>0</Value>
+      </Parameter>
+      <Parameter name="TermMode_interrupt">
+        <Value>0</Value>
+      </Parameter>
+      <Parameter name="TermMode_line">
+        <Value>0</Value>
+      </Parameter>
+      <Parameter name="TermMode_line_n">
+        <Value>0</Value>
+      </Parameter>
+      <Parameter name="TermMode_ov">
+        <Value>0</Value>
+      </Parameter>
+      <Parameter name="TermMode_reload">
+        <Value>0</Value>
+      </Parameter>
+      <Parameter name="TermMode_start">
+        <Value>0</Value>
+      </Parameter>
+      <Parameter name="TermMode_stop">
+        <Value>0</Value>
+      </Parameter>
+      <Parameter name="TermMode_un">
+        <Value>0</Value>
+      </Parameter>
+      <Parameter name="TermModeStates">
+        <Value />
+      </Parameter>
+    </Instance>
+    <Instance guid="3b9b0691-3891-409d-97ac-767f6e401535" name="Clock_1" component="cy_clock_v2_20">
+      <Parameter name="CheckTolerance">
+        <Value>true</Value>
+      </Parameter>
+      <Parameter name="CY_CONST_CONFIG">
+        <Value>true</Value>
+      </Parameter>
+      <Parameter name="CY_FITTER_NAME">
+        <Value>Clock_N</Value>
+        <Expression>`=GetShortInstanceName()`</Expression>
+      </Parameter>
+      <Parameter name="CY_MAJOR_VERSION">
+        <Value>2</Value>
+        <Expression>`=GetMajorVersion()`</Expression>
+      </Parameter>
+      <Parameter name="CY_MINOR_VERSION">
+        <Value>20</Value>
+        <Expression>`=GetMinorVersion()`</Expression>
+      </Parameter>
+      <Parameter name="CY_REMOVE">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="CY_SUPPRESS_API_GEN">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="CY_VERSION">
+        <Value>PSoC Creator  4.0 Update 1</Value>
+        <Expression>`=GetMarketingNameWithVersion()`</Expression>
+      </Parameter>
+      <Parameter name="desired_freq">
+        <Value>1</Value>
+      </Parameter>
+      <Parameter name="desired_freq_unit">
+        <Value>6</Value>
+      </Parameter>
+      <Parameter name="divisor">
+        <Value>1</Value>
+      </Parameter>
+      <Parameter name="EnableDigitalDomainOutput">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="FractDividerDenominator">
+        <Value>0</Value>
+      </Parameter>
+      <Parameter name="FractDividerNumerator">
+        <Value>0</Value>
+      </Parameter>
+      <Parameter name="FractDividerUsed">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="INSTANCE_NAME">
+        <Value>Clock_1</Value>
+      </Parameter>
+      <Parameter name="is_direct">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="is_divider">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="is_freq">
+        <Value>true</Value>
+      </Parameter>
+      <Parameter name="minus_tolerance">
+        <Value>5</Value>
+      </Parameter>
+      <Parameter name="ph_align_clock_id">
+        <Value>413DE2EF-D9F2-4233-A808-DFAF137FD877</Value>
+      </Parameter>
+      <Parameter name="ph_align_clock_name">
+        <Value>HFCLK</Value>
+      </Parameter>
+      <Parameter name="plus_tolerance">
+        <Value>5</Value>
+      </Parameter>
+      <Parameter name="source_clock_id">
+        <Value />
+      </Parameter>
+      <Parameter name="source_clock_name">
+        <Value />
+      </Parameter>
+      <Parameter name="SyncWithBusClk">
+        <Value>true</Value>
+      </Parameter>
+    </Instance>
+    <Instance guid="43ec2fa1-bf22-4b71-9477-b6ca7b97f0b0" name="UART" component="SCB_P4_v3_20">
+      <Parameter name="CY_CONST_CONFIG">
+        <Value>true</Value>
+      </Parameter>
+      <Parameter name="CY_FITTER_NAME">
+        <Value>SCB_N</Value>
+        <Expression>`=GetShortInstanceName()`</Expression>
+      </Parameter>
+      <Parameter name="CY_MAJOR_VERSION">
+        <Value>3</Value>
+        <Expression>`=GetMajorVersion()`</Expression>
+      </Parameter>
+      <Parameter name="CY_MINOR_VERSION">
+        <Value>20</Value>
+        <Expression>`=GetMinorVersion()`</Expression>
+      </Parameter>
+      <Parameter name="CY_REMOVE">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="CY_SUPPRESS_API_GEN">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="CY_VERSION">
+        <Value>PSoC Creator  4.0 Update 1</Value>
+        <Expression>`=GetMarketingNameWithVersion()`</Expression>
+      </Parameter>
+      <Parameter name="EzI2cBusVoltage">
+        <Value>3.3</Value>
+      </Parameter>
+      <Parameter name="EzI2cByteModeEnable">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="EzI2cClockFromTerm">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="EzI2cClockStretching">
+        <Value>true</Value>
+      </Parameter>
+      <Parameter name="EzI2cDataRate">
+        <Value>100</Value>
+      </Parameter>
+      <Parameter name="EzI2cIsPrimarySlaveAddressHex">
+        <Value>true</Value>
+      </Parameter>
+      <Parameter name="EzI2cIsSecondarySlaveAddressHex">
+        <Value>true</Value>
+      </Parameter>
+      <Parameter name="EzI2cMedianFilterEnable">
+        <Value>true</Value>
+      </Parameter>
+      <Parameter name="EzI2cNumberOfAddresses">
+        <Value>0</Value>
+        <Expression>ONE_ADDRESS</Expression>
+      </Parameter>
+      <Parameter name="EzI2cOvsFactor">
+        <Value>16</Value>
+      </Parameter>
+      <Parameter name="EzI2cPrimarySlaveAddress">
+        <Value>8</Value>
+      </Parameter>
+      <Parameter name="EzI2cSecondarySlaveAddress">
+        <Value>9</Value>
+      </Parameter>
+      <Parameter name="EzI2cSlewRate">
+        <Value>0</Value>
+        <Expression>FAST</Expression>
+      </Parameter>
+      <Parameter name="EzI2cSubAddressSize">
+        <Value>0</Value>
+        <Expression>SUB_ADDR8</Expression>
+      </Parameter>
+      <Parameter name="EzI2cWakeEnable">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="I2cAcceptAddress">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="I2cAcceptGeneralCall">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="I2cBusVoltage">
+        <Value>3.3</Value>
+      </Parameter>
+      <Parameter name="I2cByteModeEnable">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="I2cClockFromTerm">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="I2cDataRate">
+        <Value>100</Value>
+      </Parameter>
+      <Parameter name="I2cExternIntrHandler">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="I2cIsSlaveAddressHex">
+        <Value>true</Value>
+      </Parameter>
+      <Parameter name="I2cIsSlaveAddressMaskHex">
+        <Value>true</Value>
+      </Parameter>
+      <Parameter name="I2cManualOversampleControl">
+        <Value>true</Value>
+      </Parameter>
+      <Parameter name="I2cMedianFilterEnable">
+        <Value>true</Value>
+      </Parameter>
+      <Parameter name="I2cMode">
+        <Value>1</Value>
+        <Expression>I2C_SLAVE</Expression>
+      </Parameter>
+      <Parameter name="I2cOvsFactor">
+        <Value>16</Value>
+      </Parameter>
+      <Parameter name="I2cOvsFactorHigh">
+        <Value>8</Value>
+      </Parameter>
+      <Parameter name="I2cOvsFactorLow">
+        <Value>8</Value>
+      </Parameter>
+      <Parameter name="I2cSlaveAddress">
+        <Value>8</Value>
+      </Parameter>
+      <Parameter name="I2cSlaveAddressMask">
+        <Value>254</Value>
+      </Parameter>
+      <Parameter name="I2cSlewRate">
+        <Value>0</Value>
+        <Expression>FAST</Expression>
+      </Parameter>
+      <Parameter name="I2cWakeEnable">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="INSTANCE_NAME">
+        <Value>UART</Value>
+      </Parameter>
+      <Parameter name="ScbCustomIntrHandlerEnable">
+        <Value>true</Value>
+      </Parameter>
+      <Parameter name="ScbMisoSdaTxEnable">
+        <Value>true</Value>
+      </Parameter>
+      <Parameter name="ScbMode">
+        <Value>4</Value>
+        <Expression>UART</Expression>
+      </Parameter>
+      <Parameter name="ScbMosiSclRxEnable">
+        <Value>true</Value>
+      </Parameter>
+      <Parameter name="ScbRxWakeIrqEnable">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="ScbSclkEnable">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="ScbSs0Enable">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="ScbSs1Enable">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="ScbSs2Enable">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="ScbSs3Enable">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="SpiBitRate">
+        <Value>1000</Value>
+      </Parameter>
+      <Parameter name="SpiBitsOrder">
+        <Value>1</Value>
+        <Expression>MSB_FIRST</Expression>
+      </Parameter>
+      <Parameter name="SpiByteModeEnable">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="SpiClockFromTerm">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="SpiFreeRunningSclk">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="SpiInterruptMode">
+        <Value>0</Value>
+        <Expression>INTERRUPT_NONE</Expression>
+      </Parameter>
+      <Parameter name="SpiIntrMasterSpiDone">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="SpiIntrRxFull">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="SpiIntrRxNotEmpty">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="SpiIntrRxOverflow">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="SpiIntrRxTrigger">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="SpiIntrRxUnderflow">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="SpiIntrSlaveBusError">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="SpiIntrTxEmpty">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="SpiIntrTxNotFull">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="SpiIntrTxOverflow">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="SpiIntrTxTrigger">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="SpiIntrTxUnderflow">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="SpiLateMisoSampleEnable">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="SpiManualOversampleControl">
+        <Value>true</Value>
+      </Parameter>
+      <Parameter name="SpiMedianFilterEnable">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="SpiMode">
+        <Value>0</Value>
+        <Expression>SPI_SLAVE</Expression>
+      </Parameter>
+      <Parameter name="SpiNumberOfRxDataBits">
+        <Value>8</Value>
+      </Parameter>
+      <Parameter name="SpiNumberOfSelectLines">
+        <Value>1</Value>
+      </Parameter>
+      <Parameter name="SpiNumberOfTxDataBits">
+        <Value>8</Value>
+      </Parameter>
+      <Parameter name="SpiOvsFactor">
+        <Value>16</Value>
+      </Parameter>
+      <Parameter name="SpiRemoveMiso">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="SpiRemoveMosi">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="SpiRemoveSclk">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="SpiRxBufferSize">
+        <Value>8</Value>
+      </Parameter>
+      <Parameter name="SpiRxOutputEnable">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="SpiRxTriggerLevel">
+        <Value>7</Value>
+      </Parameter>
+      <Parameter name="SpiSclkMode">
+        <Value>0</Value>
+        <Expression>MODE_00</Expression>
+      </Parameter>
+      <Parameter name="SpiSmartioEnable">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="SpiSs0Polarity">
+        <Value>0</Value>
+        <Expression>ACTIVE_LOW</Expression>
+      </Parameter>
+      <Parameter name="SpiSs1Polarity">
+        <Value>0</Value>
+        <Expression>ACTIVE_LOW</Expression>
+      </Parameter>
+      <Parameter name="SpiSs2Polarity">
+        <Value>0</Value>
+        <Expression>ACTIVE_LOW</Expression>
+      </Parameter>
+      <Parameter name="SpiSs3Polarity">
+        <Value>0</Value>
+        <Expression>ACTIVE_LOW</Expression>
+      </Parameter>
+      <Parameter name="SpiSubMode">
+        <Value>0</Value>
+        <Expression>MOTOROLA</Expression>
+      </Parameter>
+      <Parameter name="SpiTransferSeparation">
+        <Value>1</Value>
+        <Expression>CONTINUOUS</Expression>
+      </Parameter>
+      <Parameter name="SpiTxBufferSize">
+        <Value>8</Value>
+      </Parameter>
+      <Parameter name="SpiTxOutputEnable">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="SpiTxTriggerLevel">
+        <Value>0</Value>
+      </Parameter>
+      <Parameter name="SpiWakeEnable">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="TermMode_clock">
+        <Value>0</Value>
+      </Parameter>
+      <Parameter name="TermMode_interrupt">
+        <Value>0</Value>
+      </Parameter>
+      <Parameter name="UartByteModeEnable">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="UartClockFromTerm">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="UartCtsEnable">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="UartCtsPolarity">
+        <Value>0</Value>
+        <Expression>ACTIVE_LOW</Expression>
+      </Parameter>
+      <Parameter name="UartDataRate">
+        <Value>4800</Value>
+        <Expression>4800u</Expression>
+      </Parameter>
+      <Parameter name="UartDirection">
+        <Value>3</Value>
+        <Expression>TX_RX</Expression>
+      </Parameter>
+      <Parameter name="UartDropOnFrameErr">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="UartDropOnParityErr">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="UartInterruptMode">
+        <Value>2</Value>
+        <Expression>EXTERNAL</Expression>
+      </Parameter>
+      <Parameter name="UartIntrRxFrameErr">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="UartIntrRxFull">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="UartIntrRxNotEmpty">
+        <Value>true</Value>
+      </Parameter>
+      <Parameter name="UartIntrRxOverflow">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="UartIntrRxParityErr">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="UartIntrRxTrigger">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="UartIntrRxUnderflow">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="UartIntrTxEmpty">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="UartIntrTxNotFull">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="UartIntrTxOverflow">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="UartIntrTxTrigger">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="UartIntrTxUartDone">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="UartIntrTxUartLostArb">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="UartIntrTxUartNack">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="UartIntrTxUnderflow">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="UartIrdaLowPower">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="UartIrdaPolarity">
+        <Value>0</Value>
+        <Expression>NON_INVERTING</Expression>
+      </Parameter>
+      <Parameter name="UartMedianFilterEnable">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="UartMpEnable">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="UartMpRxAcceptAddress">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="UartMpRxAddress">
+        <Value>2</Value>
+      </Parameter>
+      <Parameter name="UartMpRxAddressMask">
+        <Value>255</Value>
+      </Parameter>
+      <Parameter name="UartNumberOfDataBits">
+        <Value>8</Value>
+        <Expression>EIGHT</Expression>
+      </Parameter>
+      <Parameter name="UartNumberOfStopBits">
+        <Value>2</Value>
+        <Expression>ONE_BIT</Expression>
+      </Parameter>
+      <Parameter name="UartOvsFactor">
+        <Value>12</Value>
+      </Parameter>
+      <Parameter name="UartParityType">
+        <Value>2</Value>
+        <Expression>PARITY_NONE</Expression>
+      </Parameter>
+      <Parameter name="UartRtsEnable">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="UartRtsPolarity">
+        <Value>0</Value>
+        <Expression>ACTIVE_LOW</Expression>
+      </Parameter>
+      <Parameter name="UartRtsTriggerLevel">
+        <Value>4</Value>
+        <Expression>4u</Expression>
+      </Parameter>
+      <Parameter name="UartRxBufferSize">
+        <Value>8</Value>
+        <Expression>8u</Expression>
+      </Parameter>
+      <Parameter name="UartRxOutputEnable">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="UartRxTriggerLevel">
+        <Value>0</Value>
+        <Expression>0u</Expression>
+      </Parameter>
+      <Parameter name="UartSmartioEnable">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="UartSmCardRetryOnNack">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="UartSubMode">
+        <Value>0</Value>
+        <Expression>STANDARD</Expression>
+      </Parameter>
+      <Parameter name="UartTxBufferSize">
+        <Value>8</Value>
+        <Expression>8u</Expression>
+      </Parameter>
+      <Parameter name="UartTxOutputEnable">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="UartTxTriggerLevel">
+        <Value>0</Value>
+        <Expression>0u</Expression>
+      </Parameter>
+      <Parameter name="UartWakeEnable">
+        <Value>false</Value>
+      </Parameter>
+    </Instance>
+    <Instance guid="966838ff-a115-4a24-a465-e3b693d146c1" name="isr_1" component="cy_isr_v1_70">
+      <Parameter name="CY_CONST_CONFIG">
+        <Value>true</Value>
+      </Parameter>
+      <Parameter name="CY_FITTER_NAME">
+        <Value>isr_N</Value>
+        <Expression>`=GetShortInstanceName()`</Expression>
+      </Parameter>
+      <Parameter name="CY_MAJOR_VERSION">
+        <Value>1</Value>
+        <Expression>`=GetMajorVersion()`</Expression>
+      </Parameter>
+      <Parameter name="CY_MINOR_VERSION">
+        <Value>70</Value>
+        <Expression>`=GetMinorVersion()`</Expression>
+      </Parameter>
+      <Parameter name="CY_REMOVE">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="CY_SUPPRESS_API_GEN">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="CY_VERSION">
+        <Value>PSoC Creator  4.0 Update 1</Value>
+        <Expression>`=GetMarketingNameWithVersion()`</Expression>
+      </Parameter>
+      <Parameter name="INSTANCE_NAME">
+        <Value>isr_1</Value>
+      </Parameter>
+      <Parameter name="InterruptType">
+        <Value>0</Value>
+        <Expression>DERIVED</Expression>
+      </Parameter>
+    </Instance>
+    <Instance guid="bf8987a2-b642-4e10-bcfe-deb3503fa9b9" name="UART_RX_ISR" component="cy_isr_v1_70">
+      <Parameter name="CY_CONST_CONFIG">
+        <Value>true</Value>
+      </Parameter>
+      <Parameter name="CY_FITTER_NAME">
+        <Value>isr_N</Value>
+        <Expression>`=GetShortInstanceName()`</Expression>
+      </Parameter>
+      <Parameter name="CY_MAJOR_VERSION">
+        <Value>1</Value>
+        <Expression>`=GetMajorVersion()`</Expression>
+      </Parameter>
+      <Parameter name="CY_MINOR_VERSION">
+        <Value>70</Value>
+        <Expression>`=GetMinorVersion()`</Expression>
+      </Parameter>
+      <Parameter name="CY_REMOVE">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="CY_SUPPRESS_API_GEN">
+        <Value>false</Value>
+      </Parameter>
+      <Parameter name="CY_VERSION">
+        <Value>PSoC Creator  4.0 Update 1</Value>
+        <Expression>`=GetMarketingNameWithVersion()`</Expression>
+      </Parameter>
+      <Parameter name="INSTANCE_NAME">
+        <Value>UART_RX_ISR</Value>
+      </Parameter>
+      <Parameter name="InterruptType">
+        <Value>0</Value>
+        <Expression>DERIVED</Expression>
+      </Parameter>
+    </Instance>
+  </Instances>
+  <Signals count="34">
+    <Signal name="Net_353" type="Digital" terminalCount="1">
+      <Terminal name="BLE.clk" type="Instance Digital Output" />
+    </Signal>
+    <Signal name="Net_354" type="Digital" terminalCount="1">
+      <Terminal name="BLE.pa_en" type="Instance Digital Output" />
+    </Signal>
+    <Signal name="Net_355" type="Digital" terminalCount="1">
+      <Terminal name="UART.cts_in" type="Instance Digital Input" />
+    </Signal>
+    <Signal name="Net_356" type="Digital" terminalCount="1">
+      <Terminal name="UART.tx_out" type="Instance Digital Output" />
+    </Signal>
+    <Signal name="Net_357" type="Digital" terminalCount="1">
+      <Terminal name="UART.rts_out" type="Instance Digital Output" />
+    </Signal>
+    <Signal name="Net_358" type="Digital" terminalCount="2">
+      <Terminal name="UART_RX_ISR.int_signal" type="Instance Digital Input" />
+      <Terminal name="UART.interrupt" type="Instance Digital Output" />
+    </Signal>
+    <Signal name="Net_359" type="Digital" terminalCount="1">
+      <Terminal name="UART.clock" type="Instance Digital Input" />
+    </Signal>
+    <Signal name="Net_360" type="Digital" terminalCount="1">
+      <Terminal name="UART.rx_tr_out" type="Instance Digital Output" />
+    </Signal>
+    <Signal name="Net_361" type="Digital" terminalCount="1">
+      <Terminal name="UART.tx_tr_out" type="Instance Digital Output" />
+    </Signal>
+    <Signal name="Net_362" type="Digital" terminalCount="1">
+      <Terminal name="UART.s_mosi" type="Instance Digital Input" />
+    </Signal>
+    <Signal name="Net_363" type="Digital" terminalCount="1">
+      <Terminal name="UART.s_sclk" type="Instance Digital Input" />
+    </Signal>
+    <Signal name="Net_364" type="Digital" terminalCount="1">
+      <Terminal name="UART.s_ss" type="Instance Digital Input" />
+    </Signal>
+    <Signal name="Net_365" type="Digital" terminalCount="1">
+      <Terminal name="UART.m_miso" type="Instance Digital Input" />
+    </Signal>
+    <Signal name="Net_366" type="Digital" terminalCount="1">
+      <Terminal name="UART.m_mosi" type="Instance Digital Output" />
+    </Signal>
+    <Signal name="Net_367" type="Digital" terminalCount="1">
+      <Terminal name="UART.m_sclk" type="Instance Digital Output" />
+    </Signal>
+    <Signal name="Net_368" type="Digital" terminalCount="1">
+      <Terminal name="UART.m_ss0" type="Instance Digital Output" />
+    </Signal>
+    <Signal name="Net_369" type="Digital" terminalCount="1">
+      <Terminal name="UART.m_ss1" type="Instance Digital Output" />
+    </Signal>
+    <Signal name="Net_370" type="Digital" terminalCount="1">
+      <Terminal name="UART.m_ss2" type="Instance Digital Output" />
+    </Signal>
+    <Signal name="Net_371" type="Digital" terminalCount="1">
+      <Terminal name="UART.m_ss3" type="Instance Digital Output" />
+    </Signal>
+    <Signal name="Net_372" type="Digital" terminalCount="1">
+      <Terminal name="UART.s_miso" type="Instance Digital Output" />
+    </Signal>
+    <Signal name="Net_373" type="Digital" terminalCount="1">
+      <Terminal name="UART.rx_in" type="Instance Digital Input" />
+    </Signal>
+    <Signal name="Net_374" type="Digital" terminalCount="1">
+      <Terminal name="PeriodicTimer.stop" type="Instance Digital Input" />
+    </Signal>
+    <Signal name="Net_375" type="Digital" terminalCount="1">
+      <Terminal name="PeriodicTimer.reload" type="Instance Digital Input" />
+    </Signal>
+    <Signal name="Net_376" type="Digital" terminalCount="1">
+      <Terminal name="PeriodicTimer.start" type="Instance Digital Input" />
+    </Signal>
+    <Signal name="Net_377" type="Digital" terminalCount="1">
+      <Terminal name="PeriodicTimer.count" type="Instance Digital Input" />
+    </Signal>
+    <Signal name="Net_378" type="Digital" terminalCount="1">
+      <Terminal name="PeriodicTimer.capture" type="Instance Digital Input" />
+    </Signal>
+    <Signal name="Net_379" type="Digital" terminalCount="2">
+      <Terminal name="isr_1.int_signal" type="Instance Digital Input" />
+      <Terminal name="PeriodicTimer.interrupt" type="Instance Digital Output" />
+    </Signal>
+    <Signal name="Net_380" type="Digital" terminalCount="1">
+      <Terminal name="PeriodicTimer.ov" type="Instance Digital Output" />
+    </Signal>
+    <Signal name="Net_381" type="Digital" terminalCount="1">
+      <Terminal name="PeriodicTimer.un" type="Instance Digital Output" />
+    </Signal>
+    <Signal name="Net_382" type="Digital" terminalCount="1">
+      <Terminal name="PeriodicTimer.cc" type="Instance Digital Output" />
+    </Signal>
+    <Signal name="Net_383" type="Digital" terminalCount="1">
+      <Terminal name="PeriodicTimer.line" type="Instance Digital Output" />
+    </Signal>
+    <Signal name="Net_384" type="Digital" terminalCount="1">
+      <Terminal name="PeriodicTimer.line_n" type="Instance Digital Output" />
+    </Signal>
+    <Signal name="Net_385" type="Digital" terminalCount="2">
+      <Terminal name="PeriodicTimer.clock" type="Instance Digital Input" />
+      <Terminal name="Clock_1.clock_out" type="Instance Digital Output" />
+    </Signal>
+    <Signal name="Net_387" type="Digital" terminalCount="1">
+      <Terminal name="Clock_1.dig_domain_out" type="Instance Digital Output" />
+    </Signal>
+  </Signals>
+  <Properties>
+    <Property name="Doc.CompanyAddr1" />
+    <Property name="Doc.CompanyAddr2" />
+    <Property name="Doc.CompanyAddr3" />
+    <Property name="Doc.CompanyName" />
+    <Property name="Doc.SchematicTitle" />
+  </Properties>
+</Document>
