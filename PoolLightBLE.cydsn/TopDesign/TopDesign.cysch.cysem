@@ -86,11 +86,11 @@
     <AdvReducedTimeout>150</AdvReducedTimeout>
     <EnableReducedAdvertising>false</EnableReducedAdvertising>
     <ConnectionInterval>
-      <Minimum>7.5</Minimum>
+      <Minimum>30</Minimum>
       <Maximum>50</Maximum>
     </ConnectionInterval>
     <ConnectionSlaveLatency>0</ConnectionSlaveLatency>
-    <ConnectionTimeout>10000</ConnectionTimeout>
+    <ConnectionTimeout>655350</ConnectionTimeout>
   </AdvertisementConfig>
   <ScanConfig>
     <ScanFastWindow>30</ScanFastWindow>

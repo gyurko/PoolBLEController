@@ -8,3 +8,4 @@ Generated_Source
 *.html
 *.rpt
 cyapicallbacks.h
+/Backup/*.zip

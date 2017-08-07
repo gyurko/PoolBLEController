@@ -196,6 +196,8 @@ void StackEventHandler(uint32 event, void *eventParam)
                 sprintf(tmp, "<B %3d>", blueRequest);
                 UART_UartPutString(tmp);
             }
+            
+            CyBle_GattsWriteRsp(cyBle_connHandle);
             break;
             
         default:
