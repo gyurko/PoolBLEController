@@ -171,6 +171,7 @@ void StackEventHandler(uint32 event, void *eventParam)
             /* BLE link is established */
 
         case CYBLE_EVT_GAPP_ADVERTISEMENT_START_STOP:
+            CyBle_GappStartAdvertisement(CYBLE_ADVERTISING_FAST);
             break;
 
         case CYBLE_EVT_GATTS_WRITE_REQ:

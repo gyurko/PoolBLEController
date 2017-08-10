@@ -76,15 +76,14 @@
     </AdvFastScanInterval>
     <AdvReducedScanInterval>
       <Minimum>1000</Minimum>
-      <Maximum>10240</Maximum>
+      <Maximum>2000</Maximum>
     </AdvReducedScanInterval>
     <AdvDiscoveryMode>GENERAL</AdvDiscoveryMode>
     <AdvType>CONNECTABLE_UNDIRECTED</AdvType>
     <AdvFilterPolicy>SCAN_REQUEST_ANY_CONNECT_REQUEST_ANY</AdvFilterPolicy>
     <AdvChannelMap>ALL</AdvChannelMap>
-    <AdvFastTimeout>0</AdvFastTimeout>
-    <AdvReducedTimeout>150</AdvReducedTimeout>
-    <EnableReducedAdvertising>false</EnableReducedAdvertising>
+    <AdvFastTimeout>30</AdvFastTimeout>
+    <AdvReducedTimeout>0</AdvReducedTimeout>
     <ConnectionInterval>
       <Minimum>30</Minimum>
       <Maximum>50</Maximum>
